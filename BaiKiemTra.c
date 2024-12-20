@@ -116,8 +116,9 @@ int main(){
 		}
 		case 6:{
 		// 	Tim kiem mon an trong menu
-			char *findName;
+			char findName[50];
 			int i;
+			int found=0;
 			fflush(stdin);
 			printf("Nhap ten mon can tim: ");
 			fgets(findName,sizeof(findName),stdin);
@@ -126,8 +127,12 @@ int main(){
 				if(strcmp(menu[i].name, findName)==0){
 					printf("Mon can tim o vi tri %d\n",i+1);
 					printf("%d. %s: %.2f\n",menu[i].id, menu[i].name, menu[i].price);
+					found=1;
 				}
 			}
+			if(!found){
+				printf("Mon ban tim khong co trong menu\n");
+			}	
 			break;
 		}
 		case 7:{
