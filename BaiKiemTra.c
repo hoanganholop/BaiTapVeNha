@@ -143,11 +143,11 @@ int main(){
     return 0;
 }
 void displayMenu (){
-	printf("\n--------------MENU--------------\n");
+    printf("\n--------------MENU--------------\n");
     printf("1. In cac mon trong menu\n");
     printf("2. Them mot mon vao menu\n");
     printf("3. Sua mot mon trong menu\n");
-	printf("4. Xoa mot mon trong menu\n");
+    printf("4. Xoa mot mon trong menu\n");
     printf("5. Sap xep mon theo gia tang dan\n");
     printf("6. Tim kiem mon trong menu\n");
     printf("7. Thoat\n");
