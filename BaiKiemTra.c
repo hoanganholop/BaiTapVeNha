@@ -23,17 +23,17 @@ int main(){
 	};
 	do{
  	displayMenu();
-    scanf("%d", &choice);
-    switch(choice){
-    	case 1:{ 
+        scanf("%d", &choice);
+        switch(choice){
+	    	case 1:{ 
 		//In cac mon trong menu
-    		int i;
-    		printf("\n-----MENU-----\n");
-    		for( i=0;i<size;i++){
-    			printf("%d. %s: %.2f\n",menu[i].id, menu[i].name, menu[i].price);
+	    		int i;
+	    		printf("\n-----MENU-----\n");
+	    		for( i=0;i<size;i++){
+	    			printf("%d. %s: %.2f\n",menu[i].id, menu[i].name, menu[i].price);
+				}
+				break;
 			}
-			break;
-		}
 		case 2:{
 		// Them 1 mon vao menu	
 			int i;
@@ -109,7 +109,7 @@ int main(){
 				}
 			}
 			printf("\n-----MENU-----\n");
-    		for( i=0;i<size;i++){
+    			for( i=0;i<size;i++){
     			printf("%d. %s: %.2f\n",menu[i].id, menu[i].name, menu[i].price);
 			}	
 			break;
