@@ -102,9 +102,9 @@ int main(){
 				for(j=0;j<size-i-1;j++){
 					if(menu[j].price>menu[j+1].price){
 						struct Dish temp;
-						temp.price=menu[j].price;
-						menu[j].price=menu[j+1].price;
-						menu[j+1].price=temp.price;
+						temp=menu[j];
+						menu[j]=menu[j+1];
+						menu[j+1]=temp;
 					}
 				}
 			}
